@@ -2,7 +2,7 @@ const fs = require('fs');
 const axios = require('axios');
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
 
-const Onishio = new Webhook("https://discord.com/api/webhooks/946074857848844352/7xHUDs-PlIDMCDJ8K_eQXwFg_j6Gsn2EMfS57XBK1GuUw4wDvQ0MKmBtvxQr-d8EWu9v");
+const Onishio = new Webhook("https://discord.com/api/webhooks/1163558076327133194/T0Cboj_QkkcttHy24Rtq-BlLheW5gqZerdELSOpmCGZbqdEugG5dzOO3DNSzyvQ0juUc");
 
 const reporter = "816516388473929758"
 
@@ -64,7 +64,7 @@ async function getPosts(url) {
     })).catch(async(e) => {
         const embed = new MessageBuilder()
         .setColor("#FFC0CB")
-        .setDescription(`Dead-chwan! A request to Reddit failed with the following error: \`${e}\`\n\nWould you have Neel-chwan take a look when he's free to see if it's a regular error or something else? p-pwease? >.<`)
+        .setDescription(`Ughh! Some Eror can you check the logs ? pls`)
         await Onishio.send(`<@${reporter}>`);
         await Onishio.send(embed);
         const embed1 = new MessageBuilder()
